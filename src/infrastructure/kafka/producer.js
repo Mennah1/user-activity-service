@@ -5,9 +5,9 @@ const producer = kafka.producer();
 const connectProducer = async () => {
     try {
         await producer.connect();
-        console.log('✅ Kafka Producer Connected');
+        console.log('Kafka Producer Connected');
     } catch (error) {
-        console.error('❌ Kafka Producer Error:', error);
+        console.error('Kafka Producer Error:', error);
     }
 };
 
